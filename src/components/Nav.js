@@ -1,12 +1,8 @@
 import React from "react";
-import logo from  "../images/Logo.svg";
 
 export default function Nav() {
     return(
         <nav>
-            <a href="/">
-            <img src={logo}></img>
-            </a>
             <ul>
                 <li>
                     <a href="/">Home</a>
