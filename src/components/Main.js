@@ -1,9 +1,12 @@
 import React from 'react';
+import '../App.css';
 
 function Main() {
   return (
     <main>
-      {"Little Lemon"}
+      <div id='specials'></div>
+      <div id='testimonials'></div>
+      <div id='about'></div>
     </main>
   );
 }

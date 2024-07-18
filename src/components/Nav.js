@@ -1,8 +1,13 @@
 import React from "react";
+import '../App.css';
+import logo from "../images/Logo.svg";;
 
 export default function Nav() {
     return(
-        <nav>
+        <nav className={`navbar`}>
+            <a>
+            <img src={logo} alt="Little Lemon logo" />
+            </a>
             <ul>
                 <li>
                     <a href="/">Home</a>
