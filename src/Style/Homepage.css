@@ -1,0 +1,188 @@
+/* General styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Header styles */
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #716e6e;
+    padding: 30px;
+}
+
+
+/* Container styles */
+
+#container {
+    display: flex;
+    background-color: #d2caca;
+    justify-content: center;
+}
+
+
+/* Content styles */
+
+#content h1 {
+    font-size: 50px;
+}
+
+#content p {
+    font-size: 20px;
+}
+
+
+/* Image styles */
+
+#image {
+    display: flex;
+    float: right;
+    justify-content: center;
+}
+
+#chef {
+    width: 400px;
+    height: 500px;
+    float: right;
+}
+
+
+/* Button styles */
+
+.reserve {
+    width: 200px;
+    height: 50px;
+    color: black;
+    background-color: #F4CE14;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.reserve:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* Specials section */
+
+#specials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d2caca;
+    padding: 30px;
+}
+
+
+/* Delivery section */
+
+#container {
+    display: flex;
+    align-items: center;
+}
+
+.order {
+    display: inline;
+    grid-template-rows: 100px 100px;
+    grid-row-end: auto;
+}
+
+#delivery {
+    margin-top: 50px;
+    justify-content: center;
+    width: auto;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+}
+
+.foods {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#scroll {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    max-width: 1300px;
+    border-left: 2px solid #333;
+    border-right: 2px solid #333;
+    border-radius: 8px;
+}
+
+.foods img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+
+/* Responsive styles */
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+    }
+    #content {
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: 150px 50px 250px;
+    }
+    #image {
+        margin-top: 100px;
+    }
+    #chef {
+        width: 150px;
+        height: auto;
+        visibility: hidden;
+    }
+    #specials {
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+    }
+    .reserve {
+        width: 100px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    #delivery {
+        width: 90%;
+    }
+    #scroll {
+        width: 100%;
+    }
+    .foods {
+        width: 100%;
+        max-width: 300px;
+    }
+    .foods img {
+        max-width: 100%;
+        max-height: 200px;
+    }
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 5px;
+    }
+}
