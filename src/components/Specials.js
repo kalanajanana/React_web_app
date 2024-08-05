@@ -5,9 +5,9 @@ import Lemon from '../images/lemon dessert.jpg';
 
 function Specials() {
     return (
-        <>
+        <main>
             <div id='specials'>
-                <h1>Specials</h1>
+                <h1>{'Specials'}</h1>
                 <button className='reserve' id='onlineb'>{'Online Menu'}</button>
             </div>
             <div id='container'>
@@ -55,7 +55,7 @@ function Specials() {
                     </div>
                 </div>
             </div>
-        </>
+        </main>
     );
 }
 
