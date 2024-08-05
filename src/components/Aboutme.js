@@ -1,6 +1,6 @@
 function Aboutme(){
     return(
-        <h1>Aboutme</h1>
+        <h1>AboutUs</h1>
     );
 }
 export default Aboutme;
